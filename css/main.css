@@ -63,6 +63,13 @@ h3{
 .buy_thing:focus {
     outline:0;
 }
+.buy_upgrade{
+    color: white;
+    background-color: #555555;
+    border: 2px solid rosybrown;
+    font-size: 16px;
+    box-shadow: 2px 5px rosybrown;
+}
 /* .grid{
     display: grid;
 
