@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chocolate Clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    
+</head>
+<body>
+    <h1 class="header">Chocolate Clicker</h1>
+    <div class="container">
+        <p><b>CPS: </b><span id="TotalCPS">0</span></p>
+        <p id="display"><span id="total_clicks">0</span</p>
+    </div>
+<div class="maincontainer">
+    <div id="clickables">
+        <button id="clicks">
+        <img id="choc" src="./img/chocolate.jpg" alt="chocolate">
+        </button>
+    </div>
+    <div class="left listcontain">
+        <button id="worker" class="buy_thing worker" >
+            <p> Worker<span id="workerCPS" class="CPS"> (+1)</span></p>
+            <p class="ptext">You have: <span id="workerAmount" class="Amount">0</span></p>
+            <p class="ptext">Cost: <span class="Cost"><b id="workerCost">10</b></span></p>
+        </button>
+
+        <button id="chef" class="buy_thing chef" >
+            <p>Chef<span id="chefCPS" class="CPS"> (+5)</span></p>
+            <p class="ptext">You have: <span id="chefAmount" class="Amount">0</span></p>
+            <p class="ptext">Cost: <span class="Cost"><b id="chefCost">30</b></span></p>
+        </button>
+
+        <button id="manager" class="buy_thing manager" >
+            <p>Manager<span id="managerCPS" class="CPS"> (+10)</span></p>
+            <p class="ptext">You have: <span id="managerAmount" class="Amount">0</span></p>
+            <p class="ptext">Cost: <span class="Cost"><b id="managerCost">100</b></span></p>
+        </button>
+    </div>
+    <div class="right listcontain">
+        <button id="factory" class="buy_thing factory" >
+            <p>Factory <span id="factoryCPS" class="CPS"> (+50)</span></p>
+            <p class="ptext">You have: <span id="factoryAmount" class="Amount">0</span></p>
+            <p class="ptext">Cost: <span class="Cost"><b id="factoryCost">300</b></span></p>
+        </button>
+        <button id="truck" class="buy_thing truck" >
+            <p>Delivery Truck<span id="truckCPS" class="CPS"> (+100)</span></p>
+            <p class="ptext">You have: <span id="truckAmount" class="Amount">0</span></p>
+            <p class="ptext">Cost: <span class="Cost"><b id="truckCost">500</b></span></p>
+        </button>
+
+        <button id="island" class="buy_thing island" >
+            <p>Chocolate Island<span id="islandCPS" class="CPS"> (+200)</span></p>
+            <p class="ptext">You have: <span id="islandAmount" class="Amount">0</span></p>
+            <p class="ptext">Cost: <span class="Cost"><b id="islandCost">5000</b></span></p>
+        </button>
+    </div>
+</div>
+    <div>
+        <p>Upgrades</p>
+        <button class="buy_upgrade">
+                <p id="clickName">Gain another click</p>
+                <p class="Cost"><b id="clickCost">500</b></p>
+        </button>
+
+<hr>
+
+<b>Stats</b>
+<p>You've clicked: <span id="manualClicks">0</span> times.</p>
+<p>You're gaining: <span id="perClick">1</span> per click.</p>
+<p>Chocolate per second: <span id="TotalCPS_Stats">0</span></p>
+<br>
+<br>
+<br>
+
+</div>
+</div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
