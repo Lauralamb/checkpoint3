@@ -75,7 +75,8 @@ $('#worker').click(function(){
             player.CPS = player.CPS + worker.CPS;
             player.click = player.click - worker.cost;
             player.click = +player.click.toFixed(2);
-            worker.cost = worker.base * Math.round(1, worker.amount);
+            // worker.cost = worker.base * Math.round(1, worker.amount);
+            worker.cost = worker.base * Math.round(2, worker.amount);
             worker.cost = +worker.cost.toFixed(2);
             $('#workerAmount').text();
         } else {
@@ -93,7 +94,7 @@ $('#chef').click(function(){
         player.CPS = player.CPS + chef.CPS;
         player.click = player.click - chef.cost;
         player.click = +player.click.toFixed(2);
-        chef.cost = chef.base * Math.round(1, chef.amount);
+        chef.cost = chef.base * Math.round(2, chef.amount);
         chef.cost = +chef.cost.toFixed(2);
         $('#chefAmount').text();
     } else {
@@ -110,7 +111,7 @@ $('#manager').click(function(){
         player.CPS = player.CPS + manager.CPS;
         player.click = player.click - manager.cost;
         player.click = +player.click.toFixed(2);
-        manager.cost = manager.base * Math.round(1, manager.amount);
+        manager.cost = manager.base * Math.round(2, manager.amount);
         manager.cost = +manager.cost.toFixed(2);
         $('#managerAmount').text();
     } else {
@@ -127,7 +128,7 @@ $('#factory').click(function(){
         player.CPS = player.CPS + factory.CPS;
         player.click = player.click - factory.cost;
         player.click = +player.click.toFixed(2);
-        factory.cost = factory.base * Math.round(1, factory.amount);
+        factory.cost = factory.base * Math.round(2, factory.amount);
         factory.cost = +factory.cost.toFixed(2);
         $('#factoryAmount').text();
     } else {
@@ -145,7 +146,7 @@ if (player.click >= truck.cost) {
     player.CPS = player.CPS + truck.CPS;
     player.click = player.click - truck.cost;
     player.click = +player.click.toFixed(2);
-    truck.cost = truck.base * Math.round(1, truck.amount);
+    truck.cost = truck.base * Math.round(2, truck.amount);
     truck.cost = +truck.cost.toFixed(2);
     $('#truckAmount').text();
 } else {
@@ -162,7 +163,7 @@ if (player.click >= island.cost) {
     player.CPS = player.CPS + island.CPS;
     player.click = player.click - island.cost;
     player.click = +player.click.toFixed(2);
-    island.cost = island.base * Math.round(1, island.amount);
+    island.cost = island.base * Math.round(2, island.amount);
     island.cost = +island.cost.toFixed(2);
     $('#islandAmount').text();
 } else {
